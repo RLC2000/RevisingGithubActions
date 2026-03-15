@@ -9,7 +9,7 @@ jobs:
   runs-on: ubuntu latest
   steps:
    - name: Welcome Message
-     run: echo "This is a dummy action run"
+     uses: actions/checkout@v6
 
    - name: 2nd run
      run: ls 
