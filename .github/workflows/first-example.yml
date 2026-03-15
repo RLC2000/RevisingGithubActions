@@ -6,7 +6,7 @@ on:
 
 jobs:
  first_job:
-  runs-on: ubuntu latest
+  runs-on: ubuntu-latest
   steps:
    - name: Welcome Message
      uses: actions/checkout@v6
@@ -19,7 +19,7 @@ jobs:
 
  second_job:
     needs: first_job
-    runs-on: ubuntu latest
+    runs-on: ubuntu-latest
     steps:
       - name: rasham
         run: echo "rasham"
