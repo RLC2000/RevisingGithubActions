@@ -16,3 +16,18 @@ jobs:
    
    - name: read the file
      run: cat ReadMe.md
+
+ second_job:
+    needs: first_job
+    runs-on: ubuntu latest
+    steps:
+      - name: rasham
+        run: echo "rasham"
+ thrid_job:
+      needs: 
+        - first_job
+        - second_job
+      runs-on: ubuntu-latest
+      steps:
+        - name: rasham-test
+          run: echo "HA hA"
