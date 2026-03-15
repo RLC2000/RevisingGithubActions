@@ -1,0 +1,18 @@
+name: my workflow
+
+on:
+ - push
+ - fork
+
+jobs:
+ first_job:
+  runs_on: ubuntu latest
+  steps:
+   - name: Welcome Message
+     run: echo "This is a dummy action run"
+
+   - name: 2nd run
+     run: ls 
+   
+   - name: read the file
+     run: cat ReadMe.md
